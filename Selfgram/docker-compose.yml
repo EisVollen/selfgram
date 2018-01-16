@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  selfgram.application:
+    image: selfgram.application
+    build:
+      context: .
+      dockerfile: Selfgram.Application\Dockerfile
