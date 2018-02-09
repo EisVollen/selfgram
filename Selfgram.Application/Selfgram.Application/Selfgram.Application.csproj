@@ -24,4 +24,8 @@
     <ProjectReference Include="..\..\Selfgram.Model\Selfgram.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
 </Project>
