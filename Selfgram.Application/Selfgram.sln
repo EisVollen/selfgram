@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selfgram.Application", "Selfgram.Application\Selfgram.Application.csproj", "{A836FC51-7EA3-4B6B-A85E-AED7C15C5070}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E1A57E55-28BF-4822-BDD7-F8449F76C518}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selfgram.Objects", "Selfgram.Objects\Selfgram.Objects.csproj", "{5C58D466-2202-4E46-BC24-9778E5E77AEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selfgram.Services", "Selfgram.Services\Selfgram.Services.csproj", "{01A4816F-C9ED-4A48-B139-73E6BF69B4D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selfgram.Extensions", "Selfgram.Extensions\Selfgram.Extensions.csproj", "{B5A2D4A0-6852-493B-ACDD-ADDCA5BEEF9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selfgram.Models", "Selfgram.Models\Selfgram.Models.csproj", "{A774319F-2E64-4F4C-8506-E04C19BE88AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selfgram.Infrastructure", "Selfgram.Infrastructure\Selfgram.Infrastructure.csproj", "{DF442BF9-C807-4B18-9E38-A3EABF50BDE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A836FC51-7EA3-4B6B-A85E-AED7C15C5070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A836FC51-7EA3-4B6B-A85E-AED7C15C5070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A836FC51-7EA3-4B6B-A85E-AED7C15C5070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A836FC51-7EA3-4B6B-A85E-AED7C15C5070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A57E55-28BF-4822-BDD7-F8449F76C518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A57E55-28BF-4822-BDD7-F8449F76C518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A57E55-28BF-4822-BDD7-F8449F76C518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A57E55-28BF-4822-BDD7-F8449F76C518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C58D466-2202-4E46-BC24-9778E5E77AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C58D466-2202-4E46-BC24-9778E5E77AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C58D466-2202-4E46-BC24-9778E5E77AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C58D466-2202-4E46-BC24-9778E5E77AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A4816F-C9ED-4A48-B139-73E6BF69B4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A4816F-C9ED-4A48-B139-73E6BF69B4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A4816F-C9ED-4A48-B139-73E6BF69B4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A4816F-C9ED-4A48-B139-73E6BF69B4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A2D4A0-6852-493B-ACDD-ADDCA5BEEF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A2D4A0-6852-493B-ACDD-ADDCA5BEEF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A2D4A0-6852-493B-ACDD-ADDCA5BEEF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A2D4A0-6852-493B-ACDD-ADDCA5BEEF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A774319F-2E64-4F4C-8506-E04C19BE88AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A774319F-2E64-4F4C-8506-E04C19BE88AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A774319F-2E64-4F4C-8506-E04C19BE88AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A774319F-2E64-4F4C-8506-E04C19BE88AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF442BF9-C807-4B18-9E38-A3EABF50BDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF442BF9-C807-4B18-9E38-A3EABF50BDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF442BF9-C807-4B18-9E38-A3EABF50BDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF442BF9-C807-4B18-9E38-A3EABF50BDE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {806C7ED6-28E5-4809-B793-0ABD7E7FD089}
+	EndGlobalSection
+EndGlobal

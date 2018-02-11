@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Selfgram.Application.Models;
-using Selfgram.Application.Models.AccountViewModels;
-using Selfgram.Application.Services;
+using Selfgram.Extensions.EmailsSend;
+using Selfgram.Models.AccountViewModels;
+using Selfgram.Objects.Objects.Account;
+using Selfgram.Services.Senders;
+
 
 namespace Selfgram.Application.Controllers
 {
@@ -247,7 +245,7 @@ namespace Selfgram.Application.Controllers
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
-            return RedirectToAction(nameof(HomeController.Index), "Home");
+            return RedirectToAction(nameof(PublicationsController.Index), "Publications");
         }
 
         [HttpPost]
@@ -335,7 +333,7 @@ namespace Selfgram.Application.Controllers
         {
             if (userId == null || code == null)
             {
-                return RedirectToAction(nameof(HomeController.Index), "Home");
+                return RedirectToAction(nameof(PublicationsController.Index), "Publications");
             }
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
@@ -455,7 +453,7 @@ namespace Selfgram.Application.Controllers
             }
             else
             {
-                return RedirectToAction(nameof(HomeController.Index), "Home");
+                return RedirectToAction(nameof(PublicationsController.Index), "Publications");
             }
         }
 

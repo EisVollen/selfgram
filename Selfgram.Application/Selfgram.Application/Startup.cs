@@ -5,9 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Selfgram.Application.Data;
-using Selfgram.Application.Models;
-using Selfgram.Application.Services;
+using Selfgram.Infrastructure.Repositories;
+using Selfgram.Objects.Context;
+using Selfgram.Objects.Objects.Account;
+using Selfgram.Services.Senders;
 
 
 namespace Selfgram.Application
@@ -24,21 +25,24 @@ namespace Selfgram.Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          
+
             var connectionString = Configuration.GetConnectionString("SelfgramContext");
-          services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
-            
+            services.AddEntityFrameworkNpgsql()
+                .AddDbContext<SelfgramContext>(options => options.UseNpgsql(connectionString));
+
             services.AddIdentity<ApplicationUser, ApplicationRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<SelfgramContext>()
                 .AddDefaultTokenProviders();
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<IPublicationReposiroty, PublicationReposiroty>();
 
             ConfigureAutorization(ref services);
             
             services.AddMvc();
         }
+
         void ConfigureAutorization(ref IServiceCollection services)
         {
             services.Configure<IdentityOptions>(options =>

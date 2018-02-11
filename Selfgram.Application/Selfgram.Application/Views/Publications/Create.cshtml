@@ -1,4 +1,6 @@
-﻿@model Selfgram.Application.Models.PublicationModels.Publication
+﻿@using Selfgram.Objects.Objects
+@using Selfgram.Objects.Objects.Core
+@model Selfgram.Models.CoreModels.PublicationModel
 
 @{
     ViewData["Title"] = "Create";
@@ -26,10 +28,6 @@
                 <label asp-for="Tags" class="control-label"></label>
                 <input asp-for="Tags" class="form-control" />
                 <span asp-validation-for="Tags" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="AuthorId" class="control-label"></label>
-                <select asp-for="AuthorId" class ="form-control" asp-items="ViewBag.AuthorId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="PublicDate" class="control-label"></label>

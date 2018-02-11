@@ -21,11 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Selfgram.Model\Selfgram.Model.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\Migrations\" />
+    <ProjectReference Include="..\Selfgram.Extensions\Selfgram.Extensions.csproj" />
+    <ProjectReference Include="..\Selfgram.Infrastructure\Selfgram.Infrastructure.csproj" />
+    <ProjectReference Include="..\Selfgram.Models\Selfgram.Models.csproj" />
+    <ProjectReference Include="..\Selfgram.Objects\Selfgram.Objects.csproj" />
+    <ProjectReference Include="..\Selfgram.Services\Selfgram.Services.csproj" />
   </ItemGroup>
 
 </Project>
